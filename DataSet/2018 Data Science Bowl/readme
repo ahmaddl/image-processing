@@ -1,3 +1,19 @@
 
 Hi
 URL:https://www.kaggle.com/c/data-science-bowl-2018
+
+1- Download files
+2-extract them
+3-load them
+
+xx=np.load('x_datasciencebowl2018.npy' ,allow_pickle=True)
+yy=np.load('y_mask_datasciencebowl2018.npy' ,allow_pickle=True)
+xtest=np.load('x_test_datasciencebowl2018.npy' ,allow_pickle=True)
+
+image_x = random.randint(0, len(xx))
+plt.axis("off")
+imshow(xx[image_x])
+plt.show()
+plt.axis("off")
+imshow(np.squeeze(yy[image_x]))
+plt.show()
